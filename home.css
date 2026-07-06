@@ -1,0 +1,466 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ----------navbar------- */
+li{
+    padding: 10px;
+}
+.nav-link{
+    border: 2px solid transparent;
+}
+.nav-link:hover{
+    border-bottom: 2px solid white;
+    
+}
+
+
+/* ------home------- */
+
+#home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#home h1{
+    font-weight: bold;
+}
+.position-relative .aa{
+    position: absolute;
+    top: -260px;
+    left: -40px;
+    animation: heart 2s linear infinite;
+}
+@keyframes heart{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+}
+.position-relative .bb{
+    position: absolute;
+    top: -260px;
+    left: 550px;
+    animation: hell 2s linear infinite;
+}
+@keyframes hell{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(30px);
+    }
+}
+.position-relative .cc{
+    position: absolute;
+    top: -80px;
+    left: 250px;
+    animation: roll 3s linear infinite;
+}
+@keyframes roll{
+    0%{
+        rotate: 0deg;
+    }
+    100%{
+        rotate: 360deg;
+    }
+}
+.ss{
+    border: 8px solid white;
+    border-radius: 100%;
+    padding: 10px;
+    animation: spring 5s linear infinite;
+}
+@keyframes spring{
+    0%{
+        rotate: 0deg;
+    }
+    50%{
+        rotate: 360deg;
+    }
+}
+
+.d{
+    line-height: 5px;    
+}
+
+.grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, fr1);
+    grid-template-rows: repeat(2,fr1);
+    gap: 20px;
+}
+.grid img{
+    width: 300px;
+}
+.g1{
+    background-color: yellow;
+    grid-row: 1/2;
+    grid-column: 1/2;
+    border-radius: 30px;
+}
+.g1 .btn{
+    margin-left: 40px;
+    margin-top: 8px;
+    border-radius: 50px;
+    border: 1px solid black;
+}
+.g2{
+    background-color: rgba(22, 22, 22, 0.877);
+    grid-row: 1/2;
+    grid-column: 2/4;
+    border-radius: 30px;
+}
+.g3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(22, 22, 21, 0.89);
+    grid-row: 2/3;
+    grid-column: 1/3;
+    border-radius: 30px;
+}
+.g3 p{
+    color: white;
+    font-weight: 500;
+    font-size: 24px;
+    padding-top: 20px;
+    text-align: center;
+}
+.g4{
+    background-color: rgba(240, 240, 25, 0.849);
+    grid-row: 2/3;
+    grid-column: 3/4;
+    border-radius: 30px;
+}
+
+@media(max-width:768px){
+    .grid{
+        width: 100%;
+        height: auto;
+        display:flex;
+        flex-direction: column; 
+    }
+    .grid img{
+        width: 200px;
+    }
+}
+
+.run svg{
+    font-size: 56px;
+    width: 70px;
+    height: 70px;
+    color: gray;
+}
+.feature h1{
+    font-weight: 500;
+}
+.feature .btn{
+    font-size: 22px;
+}
+.feature p::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: white;
+    display:block;
+    transition-duration: 1s;
+}
+.feature p:hover::after{
+    width: 100%;
+}
+
+.list .row:hover img{
+    animation: swing 2.5s linear infinite;
+}
+
+@keyframes swing{
+    0%{
+        rotate: 0deg;
+    }
+    100%{
+        rotate: 360deg;
+    }
+}
+
+.year h1:hover{
+    translate: 100px;
+    transition-duration: 0.6s;
+}
+.tag .t1{
+    color: white;
+    text-decoration: none;
+    font-size: 48px;
+    font-weight: 600;
+}
+.tag .t2{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+.tag .t2 i{
+    color: red;
+}
+.btn:hover .aw{
+    color: yellow;
+}
+.btn:hover .lc{
+    color: yellow;
+}
+.btn:hover .vm{
+    color: yellow;
+}
+.btn:hover .pp{
+    color: yellow;
+}
+.btn:hover .pp2{
+    color: yellow;
+}
+.btn:hover .aa{
+    color: yellow;
+    
+}
+.ggrid{
+    margin-top: 80px;
+    margin-bottom: 120px;
+    display: grid;
+    grid-template-rows: repeat(2, fr1);
+    grid-template-columns: repeat(4, fr1);
+    gap: 20px;
+    text-align: center;
+    height: 300px;
+    
+}
+.ggrid img{
+    width: 170px;
+}
+.gg1{
+    grid-row: 1/2;
+    grid-column: 1/2;
+    border-radius: 20px;
+    background-color: rgba(31, 31, 27, 0.747);
+    padding:60px 10px;
+}
+.gg2{
+    grid-row: 1/2;
+    grid-column: 2/3;
+     background-color: rgba(31, 31, 27, 0.747);
+    padding:60px 10px;
+    border-radius: 20px;
+}
+.gg3{
+    grid-row: 1/2;
+    grid-column: 3/4;
+    background-color: rgba(31, 31, 27, 0.747);
+    padding:60px 10px;
+    border-radius: 20px;
+}
+.gg4{
+    grid-row: 1/2;
+    grid-column: 4/5;
+    background-color: rgba(31, 31, 27, 0.747);
+    padding:60px 10px;
+    border-radius: 20px;
+}
+.gg5{
+    grid-row: 2/3;
+    grid-column: 1/2;
+    background-color: rgba(31, 31, 27, 0.747);
+    padding:40px 10px;
+    border-radius: 20px;
+}
+
+.gg6{
+    grid-row: 2/3;
+    grid-column: 2/3;
+    background-color: rgba(31, 31, 27, 0.747);
+    padding:40px 10px;
+    border-radius: 20px;
+}
+.gg7{
+    grid-row: 2/3;
+    grid-column: 3/4;
+    background-color: rgba(31, 31, 27, 0.747);
+    padding:40px 10px;
+    border-radius: 20px;
+}
+.gg8{
+    grid-row: 2/3;
+    grid-column: 4/5;
+    background-color: rgba(31, 31, 27, 0.747);
+    padding:40px 10px;
+    border-radius: 20px;
+}
+
+@media(max-width:991px){
+    .ggrid{
+        height: auto;
+        display: grid;
+        grid-template-rows: repeat(3, fr1);
+        grid-template-columns: repeat(3, fr1);
+    }
+    .gg1{
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+    .gg2{
+        grid-row: 1/2;
+        grid-column: 2/3;
+    }
+    .gg3{
+        grid-row: 1/2;
+        grid-column: 3/4;
+    }
+    .gg4{
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+    .gg5{
+        grid-row: 2/3;
+        grid-column: 2/3;
+    }
+    .gg6{
+        grid-row: 2/3;
+        grid-column: 3/4;
+    }
+    .gg7{
+        grid-row: 3/4;
+        grid-column: 1/2;
+    }
+    .gg8{
+        grid-row: 3/4;
+        grid-column: 2/3;
+    }
+}
+@media(max-width:768px){
+    .ggrid{
+        height: auto;
+        display: grid;
+        grid-template-rows: repeat(4, fr1);
+        grid-template-columns: repeat(2, fr1);
+    }
+    .gg1{
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+    .gg2{
+        grid-row: 1/2;
+        grid-column: 2/3;
+    }
+    .gg3{
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+    .gg4{
+        grid-row: 2/3;
+        grid-column: 2/3;
+    }
+    .gg5{
+        grid-row: 3/4;
+        grid-column: 1/2;
+    }
+    .gg6{
+        grid-row: 3/4;
+        grid-column: 2/3;
+    }
+    .gg7{
+        grid-row: 5/6;
+        grid-column: 1/2;
+    }
+    .gg8{
+        grid-row: 5/6;
+        grid-column: 2/3;
+    }
+}
+
+.blog a{
+    text-decoration: none;
+    font-size: 22px;
+    color: white;
+}
+.blog span{
+    color: gray;
+}
+
+.blog a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: white;
+    display:block;
+    transition-duration: 1s;
+}
+.blog a:hover::after{
+    width: 90%;
+}
+
+.footer a{
+    text-decoration: none;
+    color: white;
+}
+.footer li{
+    list-style-type: none;
+}
+
+.hai{
+    width: 200px;
+    border: none;
+    border-bottom: 2px solid grey;
+    background-color: #212529;
+    font-size: 24px;
+    padding-left: 10px;
+}
+
+.footer .h4:hover{
+    color: gray;
+    transition-duration: 0.5s;
+}
+
+.footer .h3:hover{
+    color: gray;
+    transition-duration: 0.5s;
+}
+
+.fix{
+    position: relative;
+}
+.fix a:hover{
+    background-color: #212529;
+    color: yellow;
+    transition-duration: 0.5s;
+}
+
+.fix a{
+    position: fixed;
+    background-color: yellow;
+    color: #212529;
+    bottom: 20px;
+    right: 40px;
+    animation: up 3s linear infinite;
+}
+
+@keyframes up{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(0.8);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ----------navbar------- */
+li{
+    padding: 10px;
+}
+.nav-link{
+    border: 2px solid transparent;
+}
+.nav-link:hover{
+    border-bottom: 2px solid white;
+}
+
+
+li{
+    list-style-type: none;
+}
+
+.btn:hover .wd{
+    color: yellow;
+}
+.btn:hover .ud{
+    color: yellow;
+}
+.btn:hover .d{
+    color: yellow;
+}
+.btn:hover .b{
+    color: yellow;
+}
+.btn:hover .cu{
+    color: yellow;
+}
+
+.footer a{
+    text-decoration: none;
+    color: white;
+}
+.footer li{
+    list-style-type: none;
+}
+
+.hai{
+    width: 200px;
+    border: none;
+    border-bottom: 2px solid grey;
+    background-color: #212529;
+    font-size: 24px;
+    padding-left: 10px;
+}
+
+.footer .h4:hover{
+    color: gray;
+    transition-duration: 0.5s;
+}
+
+.footer .h3:hover{
+    color: gray;
+    transition-duration: 0.5s;
+}
+
+.fix{
+    position: relative;
+}
+.fix a:hover{
+    background-color: #212529;
+    color: yellow;
+    transition-duration: 0.5s;
+}
+
+.fix a{
+    position: fixed;
+    background-color: yellow;
+    color: #212529;
+    bottom: 20px;
+    right: 40px;
+    animation: up 3s linear infinite;
+}
+
+@keyframes up{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(0.8);
+    }
+}
